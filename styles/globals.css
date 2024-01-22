@@ -1,0 +1,170 @@
+* {
+  word-break: break-word;
+}
+
+:root {
+  --gap: 1rem;
+  --bg: #de6c5c;
+  --item-bg: #fefefe;
+  --raio-borda: 5px;
+  --box-width: 300px;
+  --blue: rgb(30, 104, 243);
+  --red: rgb(240, 35, 62);
+}
+
+body {
+  font-family: Arial;
+  background-color: var(--bg);
+  color: var(--item-bg);
+  padding: 30px;
+}
+
+.todo-form {
+  padding-bottom: 1.5rem;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+.home {
+  max-width: 600px;
+  margin: 0 auto 300px;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.filter-options p {
+  margin-bottom: 5px;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.titulo {
+  margin: 10px;
+}
+
+.todo-form {
+  word-break: break-word;
+}
+
+.todo-form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-form input,
+.todo-form button {
+  padding: 10px;
+  border: none;
+  background: var(--blue);
+  border-radius: var(--raio-borda);
+  color: white;
+  outline: none;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1pt;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.253);
+  margin: 10px;
+}
+
+.todo-form input {
+  text-indent: var(--gap);
+}
+
+.todo-form button {
+  width: 40px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.todo-form button:hover {
+  background-color: rgb(84, 131, 220);
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.todo {
+  background-color: var(--item-bg);
+  color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.check,
+.delete {
+  padding: 5px 10px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  background-color: rgb(194, 188, 188);
+  border-radius: 5px;
+}
+
+.check:hover {
+  background-color: rgb(27, 213, 27);
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: var(--red);
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.todo-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.clean-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.delete-finished-tasks {
+  border: none;
+  padding: 5px;
+  background-color: rgb(194, 188, 188);
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.delete-finished-tasks:hover {
+  background-color: var(--blue);
+  transition: 0.8s;
+  cursor: pointer;
+  color: var(--item-bg);
+}
+
+.incomplete-tasks {
+  margin-top: 0px;
+}
