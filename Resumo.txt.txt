@@ -1,0 +1,3 @@
+This is a straightforward To-Do List project. It allows you to add and remove tasks, and you can view your tasks in three ways: All tasks, Unfinished tasks, and Completed tasks. You can also clear the entire list or just the completed tasks. Perfect for simple task management!
+
+Descrição do projeto.
